@@ -5,15 +5,15 @@ document.querySelector("form").addEventListener("submit", function(event) {
     var email = document.querySelector("[name='email']").value;
 
     // Validate Name
-    if (name === "") {
+    if (name.trim() === "") {
         alert("Name is required");
-        return; // Stop further execution if name is empty
+        return;
     }
 
     // Validate Email
-    if (email.indexOf('@') === -1) {
+    if (email.indexOf('@') === -1 || email.trim() === "") {
         alert("Invalid email");
-        return; // Stop further execution if email is invalid
+        return;
     }
 
     alert("Form submitted!");  // Show this alert only if all validations pass

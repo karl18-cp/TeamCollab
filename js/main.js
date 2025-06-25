@@ -1,6 +1,12 @@
 // Buggy main.js
 documment.getElementById("title").innerText = "Welcome";
 
-document.getElementById("menuBtn").addEventListener("click", toggleMenu);
+function toggleMenu(){
+  alert("Menu toggled")
 
-// toggleMenu is not defined
+const menuBtn = document.getElementById("menuBtn");
+if (menuBtn) {
+  menuBtn.addEventListener("click", toggleMenu);
+} else {
+  console.warn('Element with id "menuBtn" not found.')
+}
