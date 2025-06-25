@@ -1,31 +1,89 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    padding: 20px;
+}
+
 /* Header Style */
 .header {
-    background-color: #1e90ff; /* Dodger Blue */
+    background: linear-gradient(to right, #1e90ff, #0d6efd);
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
-    padding: 20px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 4px solid #0d6efd;
+    padding: 25px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    margin-bottom: 30px;
 }
 
 /* Button Style */
 .btn {
-    background-color: #0d6efd;  /* Bootstrap Blue */
+    background-color: #0d6efd;
     color: white;
-    padding: 12px 24px;
+    padding: 14px 28px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* Button Hover Effect */
+/* Button Hover */
 .btn:hover {
-    background-color: #198754;  /* Bootstrap Green */
-    transform: scale(1.05);
+    background-color: #198754;
+    transform: scale(1.07);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Focus */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.5);
+}
+
+/* Button Active */
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Card Container Example */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .header {
+        font-size: 22px;
+        padding: 18px 0;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .card {
+        padding: 20px;
+    }
 }
