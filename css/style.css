@@ -21,3 +21,7 @@
 .btn:active {
     background-color: darkred;
 }
+
+p{
+    color: red;
+}
