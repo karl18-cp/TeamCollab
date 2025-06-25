@@ -7,3 +7,17 @@
 .btn:hover {
     background-color: green;
 }
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+.btn {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+}
+.btn:active {
+    background-color: darkred;
+}
